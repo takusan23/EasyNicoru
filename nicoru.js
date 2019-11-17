@@ -97,7 +97,8 @@ window.onload = function () {
                     case 1:
                         //旧ニコるくんオプション
                         //にこった！
-                        var html = '<img src="chrome-extension://gbfjeghnefanpmmkdngbjkpjigmhmcml/img/old_nicoru_nicotta.png" style="width:20px">'
+                        var path = chrome.extension.getURL('img/old_nicoru_nicotta.png')
+                        var html = `<img src="${path}" style="width:20px">`
                         var nicoruIcon = document.getElementsByClassName('NicoruIcon NicoruCell-icon is-nicotta')
                         for (let index = 0; index < nicoruIcon.length; index++) {
                             const icon = nicoruIcon[index];
@@ -112,10 +113,12 @@ window.onload = function () {
                             if (icon.innerHTML != html) {
                                 icon.innerHTML = html
                             }
-                        } break
+                        }
+                        break
                     case 2:
                         //いんゆめくん
-                        var html = '<img src="chrome-extension://gbfjeghnefanpmmkdngbjkpjigmhmcml/img/inyume.png" style="width:15px">'
+                        var path = chrome.extension.getURL('img/inyume.png')
+                        var html = `<img src="${path}" style="width:15px">`
                         var nicoruIcon = document.getElementsByClassName('NicoruIcon NicoruCell-icon is-nicotta')
                         for (let index = 0; index < nicoruIcon.length; index++) {
                             const icon = nicoruIcon[index];
