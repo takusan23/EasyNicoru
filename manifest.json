@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "EasyNicoru",
     "version": "1.0",
-    "description": "ニコるくん押しにくいのでコメント欄からコメントを押すだけでニコれる拡張機能",
+    "description": "コメント欄からコメントを押すだけでニコれる拡張機能",
     "content_scripts": [
         {
             "matches": [
@@ -12,5 +12,24 @@
                 "nicoru.js"
             ]
         }
+    ],
+    "browser_action": {
+        "default_icon": {
+            "48": "icons/easy_nicoru_48.png"
+        },
+        "default_popup": "popup/popup.html"
+    },
+    "icons": {
+        "48": "icons/easy_nicoru_48.png",
+        "64": "icons/easy_nicoru_64.png",
+        "128": "icons/easy_nicoru_128.png"
+    },
+    "web_accessible_resources": [
+        "img/old_nicoru_mada.png",
+        "img/old_nicoru_nicotta.png",
+        "img/inyume.png"
+    ],
+    "permissions": [
+        "storage"
     ]
 }

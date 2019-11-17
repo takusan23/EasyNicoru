@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EasyNicoru設定</title>
+</head>
+
+<body style="width: 350px;">
+    <h2>EasyNicoru設定</h2>
+    <div>
+        <label><input type="checkbox" id="easy_nicoru_on" checked="checked"
+                style="position: relative;  top: 2px;">EasyNicoru（コメントクリックニコる）を有効にする</label>
+        <br>
+        <label><input type="checkbox" id="icon_change" style="position: relative;  top: 2px;">ニコる画像差し替えを利用する（EasyNicoru無効時でも利用できます。）</label>
+        <br>
+        <label><input type="radio" name="icon" style="position: relative;  top: 2px;">新ニコるくん</label>
+        <br>
+        <label><input type="radio" name="icon" style="position: relative;  top: 2px;">前のニコるくん</label>
+        <br>
+        <label><input type="radio" name="icon" style="position: relative;  top: 2px;">いんゆめくん</label>
+        <br>
+        <input type="button" value="保存" id="save">
+    </div>
+    <!-- JS読み込み -->
+    <script src="popup.js"></script>
+</body>
+
+</html>
